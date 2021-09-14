@@ -18,7 +18,7 @@ struct ContentView: View {
     var body: some View {
 		VStack(spacing: 40) {
 			Button(action: {
-				self.randomColors = RandomColor.make(180)
+				self.randomColors = RandomColor.make(60)
 			}, label: {
 				Image(systemName: "arrow.clockwise.circle.fill")
 					.resizable()
