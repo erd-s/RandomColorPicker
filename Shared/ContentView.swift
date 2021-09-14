@@ -68,36 +68,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
-struct RandomColor: Identifiable {
-	let id: String = UUID().uuidString
-	let color: Color
-	
-	static func make(_ number: Int) -> [RandomColor] {
-		var colors: [RandomColor] = []
-		while colors.count < number {
-			colors.append(RandomColor(color: .random()))
-		}
-		return colors
-	}
-}
-
-extension Color {
-	static func random() -> Color {
-		let r = CGFloat(arc4random_uniform(200))/255
-		let g = CGFloat(arc4random_uniform(200))/255
-		let b = CGFloat(arc4random_uniform(200))/255
-		
-		return Color(UIColor(red: r, green: g, blue: b, alpha: 1.0))
-	}
-	
-	func hex() -> String {
-		let uiColor = UIColor(self)
-		guard uiColor.cgColor.numberOfComponents == 4 else {
-			return "Color not RGB."
-		}
-		let a = uiColor.cgColor.components!.map { Int($0 * CGFloat(255)) }
-		let color = String.init(format: "#%02x%02x%02x", a[0], a[1], a[2])
-		return color
-	}
-}

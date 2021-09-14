@@ -11,7 +11,10 @@ import SwiftUI
 struct RandomColorPickerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+			ZStack {
+				Color(UIColor(hex: "#787f95"))
+				ContentView()
+			}.edgesIgnoringSafeArea(.all)
         }
     }
 }

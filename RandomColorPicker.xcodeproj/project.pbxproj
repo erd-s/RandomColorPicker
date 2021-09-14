@@ -13,6 +13,8 @@
 		0C782D1326F01ECC003ADE51 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C782CFE26F01ECB003ADE51 /* ContentView.swift */; };
 		0C782D1426F01ECC003ADE51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C782CFF26F01ECC003ADE51 /* Assets.xcassets */; };
 		0C782D1526F01ECC003ADE51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C782CFF26F01ECC003ADE51 /* Assets.xcassets */; };
+		0C782D2226F034DB003ADE51 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C782D2126F034DB003ADE51 /* Color+Extension.swift */; };
+		0C782D2326F034DB003ADE51 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C782D2126F034DB003ADE51 /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		0C782D0C26F01ECC003ADE51 /* RandomColorPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomColorPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C782D0E26F01ECC003ADE51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C782D0F26F01ECC003ADE51 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		0C782D2126F034DB003ADE51 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 				0C782CFD26F01ECB003ADE51 /* RandomColorPickerApp.swift */,
 				0C782CFE26F01ECB003ADE51 /* ContentView.swift */,
 				0C782CFF26F01ECC003ADE51 /* Assets.xcassets */,
+				0C782D2126F034DB003ADE51 /* Color+Extension.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -188,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C782D1226F01ECC003ADE51 /* ContentView.swift in Sources */,
+				0C782D2226F034DB003ADE51 /* Color+Extension.swift in Sources */,
 				0C782D1026F01ECC003ADE51 /* RandomColorPickerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C782D1326F01ECC003ADE51 /* ContentView.swift in Sources */,
+				0C782D2326F034DB003ADE51 /* Color+Extension.swift in Sources */,
 				0C782D1126F01ECC003ADE51 /* RandomColorPickerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
